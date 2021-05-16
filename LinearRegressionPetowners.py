@@ -21,10 +21,10 @@ doglist2 = np.array(doglist2)
 doglist2 = np.reshape(doglist2, (50, 1))
 catlist2 = np.array(catlist2)
 
-#Classifier
-clf = LinearRegression()
-clf.fit(doglist2, catlist2)
-print(clf.predict([[0]]))
+#Regression
+regressor = LinearRegression()
+regressor.fit(doglist2, catlist2)
+print(regressor.predict([[0]]))
 
 #Print Graph
 plt.scatter(catlist2, doglist2)
